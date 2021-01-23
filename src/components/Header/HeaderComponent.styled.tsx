@@ -7,6 +7,7 @@ const HeaderComponent = styled.div`
 	padding: 5px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	display: flex;
+	align-items: center;
 `;
 
 export default HeaderComponent;
