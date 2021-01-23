@@ -1,4 +1,4 @@
 export interface IProps {
-    handleToggleThemeCallback: () => void;
+    handleToggleTheme: () => void;
     theme: string
 }

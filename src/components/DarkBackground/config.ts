@@ -6,10 +6,10 @@ export const params: IParticlesParams = {
             value: "#fff"
         },
         "number": {
-            "value": 600,
+            "value": 2000,
             "density": {
                 "enable": true,
-                "value_area": 1500
+                "value_area": 5000
             }
         },
         "line_linked": {
@@ -17,11 +17,15 @@ export const params: IParticlesParams = {
             "opacity": 0.02
         },
         "move": {
-            "direction": "right",
+            "direction": "top-right",
             "speed": 0.1
         },
         "size": {
-            "value": 1
+            random: true,
+            anim: {
+                size_min: 1,
+                
+            }
         },
         "opacity": {
             "anim": {

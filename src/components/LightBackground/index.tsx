@@ -28,8 +28,10 @@ const clouds: ICloudComponentProps[] = [
 ];
 
 const LightBackground: React.FC<IProps> = (props: IProps): JSX.Element => {
+	const { hide } = props;
+
 	return (
-		<LightBackgroundComponent>
+		<LightBackgroundComponent hide={hide}>
 			{clouds.map(
 				(cloud: ICloudComponentProps, index): JSX.Element => (
 					<CloudComponent scale={cloud.scale} animationTime={cloud.animationTime} key={`${index}${cloud.scale}${cloud.animationTime}`}>

@@ -22,8 +22,9 @@ const App: React.FC = (): JSX.Element => {
 		<ThemeProvider theme={theme === THEME_NAMES.light ? lightTheme : darkTheme}>
 			<>
 				<GlobalStyles />
-				{theme === THEME_NAMES.light ? <LightBackground /> : <DarkBackground />}
-				<Main handleToggleThemeCallback={handleToggleTheme} />
+				<LightBackground hide={theme !== THEME_NAMES.light} />
+				<DarkBackground hide={theme !== THEME_NAMES.dark} />
+				<Main theme={theme} handleToggleThemeCallback={handleToggleTheme} />
 			</>
 		</ThemeProvider>
 	);
