@@ -16,8 +16,8 @@ const ThemeSwitcherComponent = styled.div`
 		border-radius: 50%;
 		background: yellow;
 		position: absolute;
-		top: 1.7px;
-		left: 2.2px;
+		top: 1.2px;
+		left: 1.2px;
 		box-shadow: 0 0 1.2px yellow;
 		z-index: 1;
 		transition: all 0.3s ease;

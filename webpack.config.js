@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const CopyWebpackPlugin = require("copy-webpack-plugin")
 
 const reactConfiguration = {
     mode: "development",
@@ -27,7 +28,7 @@ const reactConfiguration = {
                 use: ["style-loader", "css-loader"],
             },
             {
-                test: /\.(png|jpg)$/,
+                test: /\.(png|jpg|ttf)$/,
                 use: ["file-loader"],
             },
         ],
@@ -41,7 +42,7 @@ const reactConfiguration = {
             template: "./index.html",
         }),
         // new CopyWebpackPlugin({
-        //     patterns: [{ from: "package.json", to: "package.json" }],
+        //     patterns: [{ from: "src/assets", to: "src/assets" }],
         // }),
     ],
 };

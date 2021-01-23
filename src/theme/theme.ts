@@ -8,7 +8,13 @@ export const lightTheme: ITheme = {
                 "#23a6d5",
                 "#ffdd61",
                 "#fc9356",
-            ]
+            ],
+            languageSwitcherBackgroundColors: [
+                "#23a6d5",
+                "#ffdd61",
+                "#fc9356",
+            ],
+            languageSwitcherFontColor: "#000"
         }
     }
 }
@@ -21,7 +27,13 @@ export const darkTheme: ITheme = {
                 "#240059",
                 "#0b001c",
                 "#000"
-            ]
+            ],
+            languageSwitcherBackgroundColors: [
+                "#111c70",
+                "#240059",
+                "#0b001c",
+            ],
+            languageSwitcherFontColor: "#fff"
         }
     }
 }

@@ -10,7 +10,7 @@ const Header: React.FC<IProps> = (props: IProps): JSX.Element => {
 	return (
 		<HeaderComponent>
 			<ThemeSwitcher handleToggleTheme={handleToggleThemeCallback} theme={theme} />
-			<LanguageSwitcher />
+			{/* <LanguageSwitcher /> */}
 		</HeaderComponent>
 	);
 };
