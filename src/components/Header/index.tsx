@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../Container";
+import HeaderLogo from "../HeaderLogo";
 import LanguageSwitcher from "../LanguageSwitcher";
 import SettingsIcon from "../SettingsIcon";
 import ThemeSwitcher from "../ThemeSwitcher";
@@ -14,6 +15,7 @@ const Header: React.FC<IProps> = (props: IProps): JSX.Element => {
 		<HeaderComponent>
 			<Container>
 				<HeaderWrapperComponent>
+					<HeaderLogo />
 					<ThemeSwitcher handleToggleTheme={handleToggleThemeCallback} theme={theme} />
 					{/* <LanguageSwitcher /> */}
 					<SettingsIcon />

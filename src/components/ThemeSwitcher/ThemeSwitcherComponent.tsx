@@ -9,6 +9,7 @@ const ThemeSwitcherComponent = styled.div`
 	position: relative;
 	cursor: pointer;
 	display: flex;
+	margin-left: auto;
 
 	.notch {
 		height: 22px;

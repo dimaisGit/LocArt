@@ -8,7 +8,7 @@ const LanguageIconComponent = styled.div`
 	display: flex;
 	text-align: center;
 	align-items: center;
-	font-family: "Novar" monospace;
+	font-family: "Lato";
 	color: ${({ theme }: { theme: ITheme }): string => theme.html.body.languageSwitcherFontColor};
 	background-color: ${({ theme, index }: { theme: ITheme; index: number }): string => theme.html.body.languageSwitcherBackgroundColors[index]};
 	box-shadow: 0 0 3px black;

@@ -38,12 +38,12 @@ const reactConfiguration = {
         filename: "index.js",
     },
     plugins: [
+        new CopyWebpackPlugin({
+            patterns: [{ from: "src/assets", to: "src/assets" }],
+        }),
         new HtmlWebpackPlugin({
             template: "./index.html",
         }),
-        // new CopyWebpackPlugin({
-        //     patterns: [{ from: "src/assets", to: "src/assets" }],
-        // }),
     ],
 };
 
