@@ -28,7 +28,7 @@ const reactConfiguration = {
                 use: ["style-loader", "css-loader"],
             },
             {
-                test: /\.(png|jpg|ttf)$/,
+                test: /\.(png|jpg|ttf|svg)$/,
                 use: ["file-loader"],
             },
         ],

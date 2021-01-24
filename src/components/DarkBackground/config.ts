@@ -1,12 +1,12 @@
 import { IParticlesParams } from "react-particles-js";
 
-export const params: IParticlesParams = {
+export const createParams = (starsNumber: number): IParticlesParams => ({
     "particles": {
         color: {
             value: "#fff"
         },
         "number": {
-            "value": 2000,
+            "value": starsNumber,
             "density": {
                 "enable": true,
                 "value_area": 5000
@@ -49,4 +49,5 @@ export const params: IParticlesParams = {
         }
     },
     "retina_detect": true
-}
+})
+ 
