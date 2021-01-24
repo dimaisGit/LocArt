@@ -7,7 +7,6 @@ const ThemeSwitcherComponent = styled.div`
 	/* margin: auto; */
 	background-image: linear-gradient(aqua, skyblue);
 	position: relative;
-	cursor: pointer;
 	display: flex;
 	margin-left: auto;
 

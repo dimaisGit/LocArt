@@ -9,7 +9,8 @@ export interface IThemeHtml {
 export interface IThemeBody {
     color: string[],
     languageSwitcherBackgroundColors: string[]
-    languageSwitcherFontColor: string
+    languageSwitcherFontColor: string,
+    componentContainerBackgroundColor: string
 }
 
 export interface ITHemeParticlesBackground {

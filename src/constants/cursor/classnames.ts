@@ -1,0 +1,1 @@
+export const CLICKABLE_CLASS_NAME: string = "clickable";

@@ -4,7 +4,6 @@ const SettingsIconComponent = styled.div`
 	width: 32px;
 	height: 32px;
 	margin: 0 10px;
-	cursor: pointer;
 
 	& svg:hover {
 		transform: scale(1.1);

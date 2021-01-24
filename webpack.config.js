@@ -14,7 +14,9 @@ const reactConfiguration = {
         extensions: [".tsx", ".ts", ".js", ".css"],
     },
     devServer: {
-        port: 3000
+        port: 3000,
+        historyApiFallback: true,
+        open: true
     },
     module: {
         rules: [
