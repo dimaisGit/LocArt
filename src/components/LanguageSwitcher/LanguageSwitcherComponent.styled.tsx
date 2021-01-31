@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-const LanguageSwitcherComponent = styled.div`
-	display: flex;
-	transform: translateX(-100%);
-`;
+const LanguageSwitcherComponent = styled.div``;
 
 export default LanguageSwitcherComponent;

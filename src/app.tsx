@@ -7,6 +7,7 @@ import { GlobalStyles } from "./theme/themedGlobalStyles";
 import DarkBackground from "./components/DarkBackground";
 import LightBackground from "./components/LightBackground";
 import Cursor from "./components/Cursor";
+import "./i18n";
 
 const App: React.FC = (): JSX.Element => {
 	const [theme, setTheme] = useState<string>(THEME_NAMES.light);

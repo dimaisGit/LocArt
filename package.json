@@ -6,11 +6,13 @@
   "scripts": {
     "start": "webpack serve --hot",
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "translate": "i18next 'src/**/*.{tsx,hbs}' 'lib/**/*.{tsx,hbs}' [-oc]"
   },
   "author": "DmitryS",
   "license": "ISC",
   "dependencies": {
+    "@types/i18n": "^0.12.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.7",
@@ -27,6 +29,7 @@
     "react-particles-js": "^3.4.1",
     "react-planet": "^1.0.1",
     "react-router-dom": "^5.2.0",
+    "react-transition-group": "^4.4.1",
     "style-loader": "^2.0.0",
     "styled-components": "^5.2.1",
     "ts-loader": "^8.0.14",
@@ -34,6 +37,8 @@
     "webpack": "^5.17.0"
   },
   "devDependencies": {
+    "i18next": "^19.8.5",
+    "react-i18next": "^11.8.5",
     "webpack-cli": "^4.4.0",
     "webpack-dev-server": "^3.11.2"
   }

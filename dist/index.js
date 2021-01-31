@@ -54033,7 +54033,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var styled_components_1 = __importDefault(__webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js"));
-var ComponentLayoutComponent = styled_components_1.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\tbackdrop-filter: blur(80px);\n\tpadding: 10px;\n\tborder-radius: 10px;\n\tbackground-color: ", ";\n\theight: 300px;\n\ttransition: all 0.3s;\n"], ["\n\tbackdrop-filter: blur(80px);\n\tpadding: 10px;\n\tborder-radius: 10px;\n\tbackground-color: ", ";\n\theight: 300px;\n\ttransition: all 0.3s;\n"])), function (_a) {
+var ComponentLayoutComponent = styled_components_1.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\tbackdrop-filter: blur(10px);\n\tbackground-color: rgba(255, 255, 255, 0.5);\n\t/* -webkit-backdrop-filter: blur(10px); */\n\tpadding: 10px;\n\tborder-radius: 10px;\n\t/* background-color: ", "; */\n\theight: 300px;\n\ttransition: all 0.3s;\n"], ["\n\tbackdrop-filter: blur(10px);\n\tbackground-color: rgba(255, 255, 255, 0.5);\n\t/* -webkit-backdrop-filter: blur(10px); */\n\tpadding: 10px;\n\tborder-radius: 10px;\n\t/* background-color: ", "; */\n\theight: 300px;\n\ttransition: all 0.3s;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.html.body.componentContainerBackgroundColor;
 });

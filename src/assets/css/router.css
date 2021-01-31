@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	cursor: none;
+}
+
+body,
+html {
+	height: 100%;
+	width: 100%;
+	cursor: none;
+}
+body {
+	transition: all 1s;
+	overflow: hidden;
+}
+
+.router-animation-enter {
+	opacity: 0;
+	transform: translateX(-100%) skew(25deg) scale(0.5);
+}
+.router-animation-enter-active {
+	opacity: 1;
+	transition: 1000ms;
+}
+.router-animation-exit {
+	transform: translateY(-100%);
+	transition: 1000ms;
+}
+.router-animation-exit-active {
+	opacity: 0;
+	transform: translateX(100%) translateY(-100%) skew(-25deg);
+	transition: 1000ms;
+}

@@ -1,47 +1,22 @@
 import React from "react";
+import { observer } from "mobx-react-lite";
 import { Planet } from "react-planet";
-import { ILanguage, languages } from "src/constants/languages";
 import LanguageIcon from "../LanguageIcon";
 import LanguageSwitcherComponent from "./LanguageSwitcherComponent.styled";
 import { IProps } from "./types";
+import languagesStore from "src/store/Languages";
+import { LANGUAGES } from "src/constants/languages";
+import { useTranslation } from "react-i18next";
 
 const LanguageSwitcher: React.FC<IProps> = (props: IProps): JSX.Element => {
-	const elementsInPlanet: number = 5;
-	const choosedLanguage: ILanguage = languages[0];
-	const languagesToChoose: ILanguage[] = languages.filter((language: ILanguage): boolean => language.name !== choosedLanguage.name);
+	const { i18n } = useTranslation();
+
 	return (
 		<LanguageSwitcherComponent>
-			<Planet
-				orbitRadius={50}
-				dragablePlanet
-				dragRadiusPlanet={20}
-				rotation={105}
-				centerContent={
-					<LanguageIcon index={choosedLanguage.index} clickCallback={(language: string) => console.log(language)} language={choosedLanguage.name} />
-				}
-				hideOrbit
-				autoClose
-				bounceOnClose
-				bounceDirection="BOTTOM"
-			>
-				{Array(elementsInPlanet - languagesToChoose.length).map(
-					(): JSX.Element => (
-						<div></div>
-					)
-				)}
-				{languagesToChoose.map(
-					(language: ILanguage): JSX.Element => (
-						<LanguageIcon
-							key={language.name}
-							index={language.index}
-							clickCallback={(language: string): void => console.log(language)}
-							language={language.name}
-						/>
-					)
-				)}
-			</Planet>
+			<div onClick={() => i18n.changeLanguage(LANGUAGES.en).finally()}>{LANGUAGES.en}</div>
+			<div onClick={() => i18n.changeLanguage(LANGUAGES.ru).finally()}>{LANGUAGES.ru}</div>
 		</LanguageSwitcherComponent>
 	);
 };
 
-export default LanguageSwitcher;
+export default observer(LanguageSwitcher);
