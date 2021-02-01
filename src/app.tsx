@@ -8,6 +8,7 @@ import DarkBackground from "./components/DarkBackground";
 import LightBackground from "./components/LightBackground";
 import Cursor from "./components/Cursor";
 import "./i18n";
+import { BrowserRouter } from "react-router-dom";
 
 const App: React.FC = (): JSX.Element => {
 	const [theme, setTheme] = useState<string>(THEME_NAMES.light);
@@ -22,13 +23,13 @@ const App: React.FC = (): JSX.Element => {
 
 	return (
 		<ThemeProvider theme={theme === THEME_NAMES.light ? lightTheme : darkTheme}>
-			<>
+			<BrowserRouter>
 				<Cursor />
 				<GlobalStyles />
 				<LightBackground hide={theme !== THEME_NAMES.light} />
 				<DarkBackground hide={theme !== THEME_NAMES.dark} />
 				<Main theme={theme} handleToggleThemeCallback={handleToggleTheme} />
-			</>
+			</BrowserRouter>
 		</ThemeProvider>
 	);
 };

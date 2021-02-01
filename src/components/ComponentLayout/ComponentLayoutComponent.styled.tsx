@@ -7,8 +7,8 @@ const ComponentLayoutComponent = styled.div`
 	padding: 10px;
 	border-radius: 10px;
 	background-color: ${({ theme }: { theme: ITheme }) => theme.html.body.componentContainerBackgroundColor};
-	height: 300px;
 	transition: all 0.3s;
+	position: relative;
 `;
 
 export default ComponentLayoutComponent;

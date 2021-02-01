@@ -1,8 +1,17 @@
 {
+  "Creator": {
+    "title": "Автор работ"
+  },
+  "Guest": {
+    "title": "Заинтересованные"
+  },
   "Header": {
     "title": "ЛокАрт"
   },
   "Settings": {
     "title": "Настройки"
+  },
+  "Sponsor": {
+    "title": "Площадки"
   }
 }

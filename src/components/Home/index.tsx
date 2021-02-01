@@ -1,10 +1,16 @@
 import React from "react";
 import ComponentLayout from "../ComponentLayout";
-import Container from "../Container";
+import HumanThinking from "./HumanThinking";
+import Links from "./Links";
 import { IProps } from "./types";
 
 const Home: React.FC<IProps> = (): JSX.Element => {
-	return <ComponentLayout>Hi there</ComponentLayout>;
+	return (
+		<ComponentLayout>
+			<Links />
+			<HumanThinking />
+		</ComponentLayout>
+	);
 };
 
 export default Home;

@@ -1,8 +1,17 @@
 {
+  "Creator": {
+    "title": "Creator"
+  },
+  "Guest": {
+    "title": "Guest"
+  },
   "Header": {
     "title": "LOCART"
   },
   "Settings": {
     "title": "Settings"
+  },
+  "Sponsor": {
+    "title": "Places"
   }
 }

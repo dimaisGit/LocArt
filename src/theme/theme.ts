@@ -15,7 +15,8 @@ export const lightTheme: ITheme = {
                 "#fc9356",
             ],
             languageSwitcherFontColor: "#000",
-            componentContainerBackgroundColor: "rgba(0, 0, 0, 0.1)"
+            componentContainerBackgroundColor: "rgba(0, 0, 0, 0.1)",
+            svgShadowColor: "rgba(0, 0, 0, 0.7)"
         }
     }
 }
@@ -35,7 +36,8 @@ export const darkTheme: ITheme = {
                 "#0b001c",
             ],
             languageSwitcherFontColor: "#fff",
-            componentContainerBackgroundColor: "rgba(255, 255, 255, 0.1)"
+            componentContainerBackgroundColor: "rgba(255, 255, 255, 0.1)",
+            svgShadowColor: "rgba(255, 255, 255, 0.5)"
         }
     }
 }

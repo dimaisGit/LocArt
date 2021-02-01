@@ -10,7 +10,8 @@ export interface IThemeBody {
     color: string[],
     languageSwitcherBackgroundColors: string[]
     languageSwitcherFontColor: string,
-    componentContainerBackgroundColor: string
+    componentContainerBackgroundColor: string,
+    svgShadowColor: string;
 }
 
 export interface ITHemeParticlesBackground {

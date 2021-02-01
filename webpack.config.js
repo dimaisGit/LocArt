@@ -11,11 +11,13 @@ const reactConfiguration = {
         alias: {
             "src": path.resolve(__dirname, "src")
         },
-        extensions: [".tsx", ".ts", ".js", ".css"],
+        extensions: [".tsx", ".ts", ".js", ".css", ".svg"],
     },
     devServer: {
         port: 3000,
-        historyApiFallback: true,
+        historyApiFallback: {
+            index: 'index.html'
+        },
         open: true
     },
     module: {

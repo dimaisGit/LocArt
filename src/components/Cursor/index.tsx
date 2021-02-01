@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { CLICKABLE_CLASS_NAME } from "src/constants/cursor/classnames";
 import CursorComponent from "./CursorComponent.styled";
 import { IPosition } from "./types";
@@ -13,12 +14,32 @@ const Cursor: React.FC = (): JSX.Element => {
 	const [linkHovered, setLinkHovered] = useState(false);
 	const [clickableHovered, setClickableHovered] = useState(false);
 
+	const location = useLocation();
+
 	useEffect(() => {
 		addEventListeners();
 		handleLinkHoverEvents();
 		handleClickableHoverEvents();
+
 		return () => removeEventListeners();
 	}, []);
+
+	useEffect(() => {
+		setLinkHovered(false);
+		setClickableHovered(false);
+	}, [location]);
+
+	useEffect(() => {
+		console.log(clicked);
+		if (clicked) {
+			setTimeout(() => {
+				addEventListeners();
+				handleLinkHoverEvents();
+				handleClickableHoverEvents();
+			}, 500);
+			return () => removeEventListeners();
+		}
+	}, [clicked]);
 
 	const addEventListeners = (): void => {
 		document.addEventListener("mousemove", onMouseMove);
