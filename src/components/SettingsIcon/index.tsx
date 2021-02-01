@@ -1,6 +1,7 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { Link, useHistory } from "react-router-dom";
+import ReactTooltip from "react-tooltip";
 import { CLICKABLE_CLASS_NAME } from "src/constants/cursor/classnames";
 import { ROUTER_NAMES } from "src/constants/router/names";
 import SettingsIconComponent from "./SettingsIconComponent.styled";
@@ -20,9 +21,14 @@ const SettingsIcon: React.FC<IProps> = (props: IProps): JSX.Element => {
 	};
 
 	return (
-		<SettingsIconComponent className={CLICKABLE_CLASS_NAME} onClick={handleClick}>
-			<SettingsSvg />
-		</SettingsIconComponent>
+		<>
+			<SettingsIconComponent data-tip data-for="settings-icon" className={CLICKABLE_CLASS_NAME} onClick={handleClick}>
+				<SettingsSvg />
+			</SettingsIconComponent>
+			<ReactTooltip id="settings-icon" effect="solid">
+				Coming soon :)
+			</ReactTooltip>
+		</>
 	);
 };
 
