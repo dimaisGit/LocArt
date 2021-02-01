@@ -11,12 +11,12 @@ const SettingsIcon: React.FC<IProps> = (props: IProps): JSX.Element => {
 	const history = useHistory();
 
 	const handleClick = (): void => {
-		const isSettingsOpened: boolean = history.location.pathname.indexOf(ROUTER_NAMES.settings) >= 0;
-		if (!isSettingsOpened) {
-			history.push(ROUTER_NAMES.settings);
-		} else {
-			history.goBack();
-		}
+		// const isSettingsOpened: boolean = history.location.pathname.indexOf(ROUTER_NAMES.settings) >= 0;
+		// if (!isSettingsOpened) {
+		// 	history.push(ROUTER_NAMES.settings);
+		// } else {
+		// 	history.goBack();
+		// }
 	};
 
 	return (

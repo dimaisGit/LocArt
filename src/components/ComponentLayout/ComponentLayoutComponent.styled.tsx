@@ -9,6 +9,12 @@ const ComponentLayoutComponent = styled.div`
 	background-color: ${({ theme }: { theme: ITheme }) => theme.html.body.componentContainerBackgroundColor};
 	transition: all 0.3s;
 	position: relative;
+
+	&:after {
+		display: block;
+		content: "";
+		clear: both;
+	}
 `;
 
 export default ComponentLayoutComponent;

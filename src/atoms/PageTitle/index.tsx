@@ -15,7 +15,7 @@ const PageTitle = styled.div`
 		display: block;
 		position: absolute;
 		left: 50%;
-		height: 2px;
+		height: 1px;
 		width: 0;
 		background-color: white;
 		transition: 0.3s;

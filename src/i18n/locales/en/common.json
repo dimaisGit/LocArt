@@ -1,17 +1,20 @@
 {
   "Creator": {
-    "title": "Creator"
+    "title": "Creator",
+    "linkTooltip": "Ama creator!"
   },
   "Guest": {
-    "title": "Guest"
+    "title": "Spectator",
+    "linkTooltip": "Ama spectator!"
   },
   "Header": {
     "title": "LOCART"
   },
+  "Sponsor": {
+    "linkTooltip": "Ama place owner!",
+    "title": "Place owner"
+  },
   "Settings": {
     "title": "Settings"
-  },
-  "Sponsor": {
-    "title": "Places"
   }
 }

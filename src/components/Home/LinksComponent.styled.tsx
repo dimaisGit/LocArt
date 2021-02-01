@@ -6,10 +6,11 @@ const LinksComponent = styled.div`
 	margin: auto;
 	position: absolute;
 	left: 50%;
-	margin-top: 11%;
+	margin-top: 8%;
 	transform: translateX(-50%);
 	min-width: 300px;
 	display: flex;
+	justify-content: space-around;
 	z-index: 10;
 
 	div {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import AboutUsPage from "src/components/AboutUsPage";
 import Container from "src/components/Container";
 import CreatorPage from "src/components/CreatorPage";
 import GuestPage from "src/components/GuestPage";
@@ -32,6 +33,9 @@ const Router: React.FC = (): JSX.Element => {
 						</Route>
 						<Route path={ROUTER_NAMES.guest}>
 							<GuestPage />
+						</Route>
+						<Route path={ROUTER_NAMES.aboutUs}>
+							<AboutUsPage />
 						</Route>
 					</Switch>
 				</CSSTransition>
