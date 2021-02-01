@@ -1,0 +1,15 @@
+.router-animation-enter {
+	opacity: 0;
+	transform: translateX(-100%) skew(25deg) scale(0.5);
+}
+.router-animation-enter-active {
+	opacity: 1;
+	transition: 1000ms;
+}
+.router-animation-exit {
+	display: none;
+}
+.router-animation-exit-active {
+	opacity: 0;
+	transform: translateX(100%) translateY(-100%) skew(-25deg);
+}

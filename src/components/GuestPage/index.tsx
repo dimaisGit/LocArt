@@ -26,17 +26,15 @@ const GuestPage: React.FC = () => {
 					{clicked ? (
 						<>
 							<p>
-								If you register as a creator, you can: <br />
-								1. Publish your portfolio, define precisely your creative activities and requirements for places <br />
-								2. Find a nearby place (cafè, bar, university, or art gallery), where they really need your creative touch - even for free! <br />
-								3. Go public with your creativity, even if you are beginner
+								Soon, when there’re more places and creators on the platform, we’ll be able to show you News - recent events from creative community
+								around you, and notify you if something is about to happen.
 							</p>
 							<PageButton text="About us" callback={() => history.push(ROUTER_NAMES.aboutUs)} />
 						</>
 					) : (
 						<>
-							<p>It’s time to get out and show what you've got! We'll help you on that.</p>
-							<PageButton text="How?" callback={() => setIsClicked(true)} />
+							<p>Are you a huge art fan? We bet you are. One thing we can guarantee: art is always closer than you think!</p>
+							<PageButton text="Really?" callback={() => setIsClicked(true)} />
 						</>
 					)}
 				</CreatorContent>
