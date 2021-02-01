@@ -68610,17 +68610,10 @@ var GuestPage = function () {
             react_1.default.createElement(CreatorImage_styled_1.default, null,
                 react_1.default.createElement("img", { src: Guest_svg_1.default })),
             react_1.default.createElement(CreatorContent_styled_1.default, null, clicked ? (react_1.default.createElement(react_1.default.Fragment, null,
-                react_1.default.createElement("p", null,
-                    "If you register as a creator, you can: ",
-                    react_1.default.createElement("br", null),
-                    "1. Publish your portfolio, define precisely your creative activities and requirements for places ",
-                    react_1.default.createElement("br", null),
-                    "2. Find a nearby place (caf\u00E8, bar, university, or art gallery), where they really need your creative touch - even for free! ",
-                    react_1.default.createElement("br", null),
-                    "3. Go public with your creativity, even if you are beginner"),
+                react_1.default.createElement("p", null, "Soon, when there\u2019re more places and creators on the platform, we\u2019ll be able to show you News - recent events from creative community around you, and notify you if something is about to happen."),
                 react_1.default.createElement(PageButton_1.default, { text: "About us", callback: function () { return history.push(names_1.ROUTER_NAMES.aboutUs); } }))) : (react_1.default.createElement(react_1.default.Fragment, null,
-                react_1.default.createElement("p", null, "It\u2019s time to get out and show what you've got! We'll help you on that."),
-                react_1.default.createElement(PageButton_1.default, { text: "How?", callback: function () { return setIsClicked(true); } })))))));
+                react_1.default.createElement("p", null, "Are you a huge art fan? We bet you are. One thing we can guarantee: art is always closer than you think!"),
+                react_1.default.createElement(PageButton_1.default, { text: "Really?", callback: function () { return setIsClicked(true); } })))))));
 };
 exports.default = GuestPage;
 
@@ -69512,14 +69505,14 @@ exports.ROUTER_NAMES = {
     settings: "/settings",
     creator: "/creator",
     sponsor: "/sponsor",
-    guest: "/guest/:slider",
+    guest: "/guest",
     aboutUs: "/about"
 };
 exports.ROUTER_LINKS = {
     settings: "/settings",
     creator: "/creator",
     sponsor: "/sponsor",
-    guest: "/guest/0",
+    guest: "/guest",
     aboutUs: "/about"
 };
 
